@@ -8,4 +8,4 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - 'push'
-  - 'gcr.io/possible-surf-250517/waterfall
+  - 'gcr.io/possible-surf-250517/waterfall'
