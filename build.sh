@@ -8,8 +8,6 @@ cd /waterfall
 echo "Fetching Waterfall"
 wget -O waterfall.jar $WATERFALL_JAR_URL
 
-echo "Fetching Plugins"
-wget -O plugins.zip $WATERFALL_PLUGINS_ZIP_URL
-
-unzip
+#echo "Fetching Plugins"
+#wget -O plugins.zip $WATERFALL_PLUGINS_ZIP_URL
 
