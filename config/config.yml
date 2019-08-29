@@ -17,7 +17,7 @@ disabled_commands:
 servers:
   lobby:
     motd: '&1Just another Waterfall - Forced Host'
-    address: localhost:25565
+    address: mc.playhrzn.com:25568
     restricted: false
 listeners:
 - query_port: 25577
