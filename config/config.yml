@@ -21,7 +21,7 @@ servers:
     restricted: false
 listeners:
 - query_port: 25577
-  motd: '{{MOTD}}'
+  motd: '{{motd}}'
   tab_list: GLOBAL_PING
   query_enabled: false
   proxy_protocol: false
