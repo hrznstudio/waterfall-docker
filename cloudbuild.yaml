@@ -2,6 +2,10 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - 'build'
+  - '--build-arg'
+  - 'WATERFALL_PLUGINS_ZIP_URL=$WATERFALL_PLUGINS_ZIP_URL'
+  - '--build-arg'
+  - 'WATERFALL_SUBSERVERS_ROLE=BUNGEE'
   - '-t'
   - 'gcr.io/possible-surf-250517/waterfall'
   - '.'
@@ -9,3 +13,17 @@ steps:
   args:
   - 'push'
   - 'gcr.io/possible-surf-250517/waterfall'
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'build'
+  - '--build-arg'
+  - 'WATERFALL_PLUGINS_ZIP_URL=$WATERFALL_PLUGINS_ZIP_URL'
+  - '--build-arg'
+  - 'WATERFALL_SUBSERVERS_ROLE=SYNC'
+  - '-t'
+  - 'gcr.io/possible-surf-250517/waterfall-sync'
+  - '.'
+- name: 'gcr.io/cloud-builders/docker'
+  args:
+  - 'push'
+  - 'gcr.io/possible-surf-250517/waterfall-sync'
