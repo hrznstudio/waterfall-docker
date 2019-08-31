@@ -4,7 +4,7 @@ set -e
 WATERFALL_JAR_URL="https://papermc.io/ci/job/Waterfall/lastSuccessfulBuild/artifact/Waterfall-Proxy/bootstrap/target/Waterfall.jar"
 
 SUBSERVERS_ROOT_URL="https://src.me1312.net/jenkins/job/SubServers%20Platform/lastSuccessfulBuild/artifact/Artifacts"
-SUBSERVERS_PATCHER_URL="${SUBSERVERS_PATCHER_URL}/SubServers.Patcher.sh"
+SUBSERVERS_PATCHER_URL="${SUBSERVERS_ROOT_URL}/SubServers.Patcher.sh"
 SUBSERVERS_BUNGEE_URL="${SUBSERVERS_ROOT_URL}/SubServers.Bungee.jar"
 SUBSERVERS_SYNC_URL="${SUBSERVERS_ROOT_URL}/SubServers.Sync.jar"
 
