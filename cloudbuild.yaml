@@ -27,3 +27,6 @@ steps:
   args:
   - 'push'
   - 'gcr.io/possible-surf-250517/waterfall-sync'
+images:
+- 'gcr.io/possible-surf-250517/waterfall'
+- 'gcr.io/possible-surf-250517/waterfall-sync'
