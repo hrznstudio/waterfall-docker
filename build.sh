@@ -16,6 +16,8 @@ wget -O waterfall.jar "${WATERFALL_JAR_URL}"
 if [ ! -z $WATERFALL_PLUGINS_ZIP_URL ]; then
   echo "Fetching Plugins"
   wget -O plugins.zip "${WATERFALL_PLUGINS_ZIP_URL}"
+  unzip plugins.zip -d plugins
+  rm -f plugins.zip
 fi
 
 if [ ! -z $WATERFALL_SUBSERVERS_ROLE ]; then
