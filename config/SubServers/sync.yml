@@ -1,0 +1,14 @@
+Settings:
+  Version: 19w35b
+  Smart-Fallback: true
+  Override-Bungee-Commands: true
+  UPnP:
+    Forward-Proxy: true
+  SubData:
+    Address: {{subdata-ip}}:4391
+Sync:
+  Disabled-Commands: false
+  Forced-Hosts: true
+  Motd: false
+  Player-Limit: false
+  Server-Priorities: true

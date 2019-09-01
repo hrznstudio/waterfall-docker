@@ -6,6 +6,8 @@ sed -i "s/{{motd}}/\&1${HOSTNAME}/" /waterfall/config.yml
 sed -i "s/{{hostname}}/${HOSTNAME}/" /waterfall/plugins/RedisBungee/config.yml
 sed -i "s/{{redis-ip}}/${WATERFALL_REDIS_IP}/" /waterfall/plugins/RedisBungee/config.yml
 
+sed -i "s/{{subdata-ip}}/${WATERFALL_SUBDATA_IP}/" /waterfall/SubServers/sync.yml
+
 COMMAND="java -Xmx$JAVA_MEMORY -Xms$JAVA_MEMORY $JAVA_ARGS -jar SubServers.Patched.jar"
 echo "Running Waterfall - $COMMAND"
 

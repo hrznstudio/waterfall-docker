@@ -13,11 +13,14 @@ cd /waterfall
 echo "Fetching Waterfall"
 wget -O waterfall.jar "${WATERFALL_JAR_URL}"
 
-if [ ! -z $WATERFALL_PLUGINS_ZIP_URL ]; then
+if [ ! -z $WATERFALL_CDN_URL ]; then
   echo "Fetching Plugins"
-  wget -O plugins.zip "${WATERFALL_PLUGINS_ZIP_URL}"
+  wget -O plugins.zip "${WATERFALL_CDN_URL}/proxy-plugins.zip"
   unzip plugins.zip -d plugins
   rm -f plugins.zip
+  echo "Fetching SubServers keys"
+  wget -O SubServers/subdata.rsa.key "${WATERFALL_CDN_URL}/subservers/subdata.rsa.key"
+  wget -O SubServers/Cache/private.rsa.key "${WATERFALL_CDN_URL}/subservers/private.rsa.key"
 fi
 
 if [ ! -z $WATERFALL_SUBSERVERS_ROLE ]; then

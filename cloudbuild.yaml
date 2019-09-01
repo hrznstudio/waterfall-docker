@@ -3,7 +3,7 @@ steps:
   args:
   - 'build'
   - '--build-arg'
-  - 'WATERFALL_PLUGINS_ZIP_URL=${_WATERFALL_PLUGINS_ZIP_URL}'
+  - 'WATERFALL_CDN_URL=${_WATERFALL_CDN_URL}'
   - '--build-arg'
   - 'WATERFALL_SUBSERVERS_ROLE=BUNGEE'
   - '-t'
@@ -17,7 +17,7 @@ steps:
   args:
   - 'build'
   - '--build-arg'
-  - 'WATERFALL_PLUGINS_ZIP_URL=${_WATERFALL_PLUGINS_ZIP_URL}'
+  - 'WATERFALL_CDN_URL=${_WATERFALL_CDN_URL}'
   - '--build-arg'
   - 'WATERFALL_SUBSERVERS_ROLE=SYNC'
   - '-t'

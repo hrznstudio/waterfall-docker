@@ -1,0 +1,23 @@
+Settings:
+  Version: 19w35b
+  Smart-Fallback: true
+  Override-Bungee-Commands: true
+  UPnP:
+    Forward-Proxy: true
+    Forward-SubData: false
+    Forward-Servers: false
+  SubData:
+    Address: 0.0.0.0:4391
+    Encryption: RSA/AES
+    Allowed-Connections:
+    - '10.%.%.%'
+Hosts:
+  '~':
+    Enabled: true
+    Display: Default
+    Driver: BUILT-IN
+    Address: 127.0.0.1
+    Port-Range: 25500-25559
+    Directory: ./SubServers/Servers
+    Git-Bash: '%ProgramFiles%\Git'
+    Log-Creator: true

@@ -1,0 +1,20 @@
+Settings:
+  Version: 19w35b
+  Run-On-Launch-Timeout: 0
+Servers:
+  Example:
+    Enabled: false
+    Display: ''
+    Host: '~'
+    Group: []
+    Port: 25567
+    Motd: Some SubServer
+    Log: true
+    Directory: ./
+    Executable: java -Xmx1024M -Djline.terminal=jline.UnsupportedTerminal -jar Spigot.jar
+    Stop-Command: stop
+    Stop-Action: NONE
+    Run-On-Launch: false
+    Restricted: false
+    Incompatible: []
+    Hidden: false
