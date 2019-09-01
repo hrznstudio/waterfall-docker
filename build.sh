@@ -33,7 +33,9 @@ if [ ! -z $WATERFALL_SUBSERVERS_ROLE ]; then
     wget -O subservers.jar "${SUBSERVERS_SYNC_URL}"
   fi
 
-  sh patcher.sh waterfall.jar subservers.jar
+  apk add git
+  sh patcher.sh waterfall.jar subservers.jar | grep -v 'created\|inflated\|adding\|ignoring\|added'
+  apk del git
   rm -f patcher.sh waterfall.jar subservers.jar
 fi
 
