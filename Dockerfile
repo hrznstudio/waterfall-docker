@@ -17,4 +17,6 @@ COPY ./run.sh /run.sh
 ENV JAVA_MEMORY=512M
 ENV JAVA_ARGS=
 
+ENV WATERFALL_REDIS_IP=
+
 CMD ["sh", "/run.sh"]
