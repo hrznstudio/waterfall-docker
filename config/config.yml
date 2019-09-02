@@ -24,7 +24,7 @@ listeners:
   motd: '{{motd}}'
   tab_list: GLOBAL_PING
   query_enabled: false
-  proxy_protocol: false
+  proxy_protocol: true
   forced_hosts:
     pvp.md-5.net: pvp
   ping_passthrough: false
