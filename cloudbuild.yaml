@@ -7,12 +7,12 @@ steps:
   - '--build-arg'
   - 'WATERFALL_SUBSERVERS_ROLE=BUNGEE'
   - '-t'
-  - 'gcr.io/possible-surf-250517/waterfall'
+  - 'gcr.io/hrznfactory/waterfall'
   - '.'
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - 'push'
-  - 'gcr.io/possible-surf-250517/waterfall'
+  - 'gcr.io/hrznfactory/waterfall'
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - 'build'
@@ -21,12 +21,12 @@ steps:
   - '--build-arg'
   - 'WATERFALL_SUBSERVERS_ROLE=SYNC'
   - '-t'
-  - 'gcr.io/possible-surf-250517/waterfall-sync'
+  - 'gcr.io/hrznfactory/waterfall-sync'
   - '.'
 - name: 'gcr.io/cloud-builders/docker'
   args:
   - 'push'
-  - 'gcr.io/possible-surf-250517/waterfall-sync'
+  - 'gcr.io/hrznfactory/waterfall-sync'
 images:
-- 'gcr.io/possible-surf-250517/waterfall'
-- 'gcr.io/possible-surf-250517/waterfall-sync'
+- 'gcr.io/hrznfactory/waterfall'
+- 'gcr.io/hrznfactory/waterfall-sync'
